@@ -7,19 +7,30 @@ import time
 # Set page config
 st.set_page_config(page_title="Dye Exhaust Dashboard", layout="wide")
 
-# Force theme settings
 st.markdown(
     """
     <style>
-        /* Override Streamlit dark theme */
-        body {
-            background-color: white !important;
-            color: black !important;
-        }
+    /* Main app background */
+    .css-18e3th9 {
+        background-color: white !important;
+        color: black !important;
+    }
+    
+    /* Sidebar background */
+    .css-1d391kg {
+        background-color: #f0f2f6 !important;
+        color: black !important;
+    }
+
+    /* Text color inside app */
+    .css-1v0mbdj, .css-1v0mbdj p, .css-1v0mbdj span {
+        color: black !important;
+    }
     </style>
     """,
     unsafe_allow_html=True
 )
+
 
 # Initialize session state for authentication
 if 'authenticated' not in st.session_state:
@@ -566,6 +577,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
