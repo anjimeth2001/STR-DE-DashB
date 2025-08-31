@@ -72,7 +72,7 @@ def main_application():
     col1, col2, col3 = st.columns([1, 1, 1])
     with col2:
         st.markdown("<div style='text-align:center; padding:0.5rem; background-color:#e8f4fd; border-radius:5px; margin-bottom:1rem;'><strong>👋 Welcome</strong><br><small>Dye Exhaust- Data Integration Dashboard</small></div>", unsafe_allow_html=True)
-
+        st.markdown("---")
     # --- Switch for file input ---
     st.markdown("### 📥 Select File Input Method")
     input_method = st.radio("Choose method:", ["Use Predefined Paths", "Upload Files"])
@@ -345,7 +345,7 @@ def main_application():
 
 
                    # --- Add space between Exhaust box and Refresh button ---
-                   st.sidebar.markdown("<div style='margin-bottom: 320px;'></div>", unsafe_allow_html=True)
+                   #st.sidebar.markdown("<div style='margin-bottom: 320px;'></div>", unsafe_allow_html=True)
 
                   # --- Centered Refresh Button ---
                 refresh_col1, refresh_col2, refresh_col3 = st.sidebar.columns([1,2,1])
@@ -565,3 +565,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
