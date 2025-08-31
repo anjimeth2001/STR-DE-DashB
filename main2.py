@@ -312,7 +312,7 @@ def main_application():
                    """, unsafe_allow_html=True)
         
         # --- Add space between Exhaust box and Refresh button ---
-        st.sidebar.markdown("<div style='margin-bottom: 50px;'></div>", unsafe_allow_html=True)
+        st.sidebar.markdown("<div style='margin-bottom: 80px;'></div>", unsafe_allow_html=True)
 
         if "Dye Finish Date" in df_vis.columns:
             df_vis["Dye Finish Date"] = pd.to_datetime(df_vis["Dye Finish Date"], errors="coerce")
@@ -571,6 +571,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
