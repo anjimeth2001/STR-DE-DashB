@@ -75,16 +75,16 @@ def main_application():
         
     # --- Switch for file input ---
     st.markdown("---")
-    st.markdown("### 📥 Select File Input Method")
-    input_method = st.radio("Choose method:", ["Use Predefined Paths", "Upload Files"])
+    st.markdown("### 📥 Upload Files")
+    input_method = st.radio("Choose method:", ["Upload Files"])
 
     # --- Define file variables ---
-    if input_method == "Use Predefined Paths":
-        exd_file = r"C:\Users\SMART HUB\Desktop\4 Y\STR\Wanted-20250829T154216Z-1-001\Wanted\Exhaust Data.xlsx"
-        logbook_file = r"C:\Users\SMART HUB\Desktop\4 Y\STR\Wanted-20250829T154216Z-1-001\Wanted\Log Book Daily Production 2025.xlsx"
-        maindye_file = r"C:\Users\SMART HUB\Desktop\4 Y\STR\Wanted-20250829T154216Z-1-001\Wanted\Main Dye Sample.xlsx"
-        finalsample_file = r"C:\Users\SMART HUB\Desktop\4 Y\STR\Wanted-20250829T154216Z-1-001\Wanted\Final Sample.xlsx"
-        cmc_file = r"C:\Users\SMART HUB\Desktop\4 Y\STR\Wanted-20250829T154216Z-1-001\Wanted\CMC Data entry.xlsx"
+    if input_method == "Upload Files":
+        exd_file = st.file_uploader("Upload Exhaust Data Excel", type=["xlsx"])
+        logbook_file = st.file_uploader("Upload Logbook Excel", type=["xlsx"])
+        maindye_file = st.file_uploader("Upload Main Dye Sample Excel", type=["xlsx"])
+        finalsample_file = st.file_uploader("Upload Final Sample Excel", type=["xlsx"])
+        cmc_file = st.file_uploader("Upload CMC Data Entry Excel", type=["xlsx"])
     else:
         exd_file = st.file_uploader("Upload Exhaust Data Excel", type=["xlsx"])
         logbook_file = st.file_uploader("Upload Logbook Excel", type=["xlsx"])
@@ -566,6 +566,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
