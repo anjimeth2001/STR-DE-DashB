@@ -346,7 +346,7 @@ def main_application():
 
 
                    # --- Add space between Exhaust box and Refresh button ---
-                   st.sidebar.markdown("<div style='margin-bottom: 20px;'></div>", unsafe_allow_html=True)
+                   st.sidebar.markdown("<div style='margin-bottom: 100px;'></div>", unsafe_allow_html=True)
 
                   # --- Centered Refresh Button ---
                 refresh_col1, refresh_col2, refresh_col3 = st.sidebar.columns([1,2,1])
@@ -566,5 +566,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
