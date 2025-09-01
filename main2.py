@@ -348,7 +348,7 @@ def main_application():
                    if pd.notnull(last_updated):
                       st.sidebar.markdown(
                          f"<div style='margin-top:2rem; color:#555; font-size:0.9rem;'>"
-                         f"📌 Exhaust Data Last Updated: <strong>{last_updated.strftime('%d/%m/%Y %H:%M')}</strong>"
+                         f"📌 Exhaust Data Last Updated: <strong>{last_updated.strftime('%d/%m/%Y')}</strong>"
                          f"</div>", 
                          unsafe_allow_html=True
                        )
@@ -571,6 +571,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
