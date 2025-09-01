@@ -91,17 +91,17 @@ def main_application():
 
     # --- Define file variables ---
     if input_method == "Upload Files":
-        exd_file = st.file_uploader("Upload Exhaust Data Excel", type=["xlsx"])
-        logbook_file = st.file_uploader("Upload Logbook Excel", type=["xlsx"])
-        maindye_file = st.file_uploader("Upload Main Dye Sample Excel", type=["xlsx"])
-        finalsample_file = st.file_uploader("Upload Final Sample Excel", type=["xlsx"])
-        cmc_file = st.file_uploader("Upload CMC Data Entry Excel", type=["xlsx"])
+        exd_file = st.file_uploader("Upload Exhaust Data Excel", type=["xls","xlsx"])
+        logbook_file = st.file_uploader("Upload Logbook Excel", type=["xls","xlsx"])
+        maindye_file = st.file_uploader("Upload Main Dye Sample Excel", type=["xls","xlsx"])
+        finalsample_file = st.file_uploader("Upload Final Sample Excel", type=["xls","xlsx"])
+        cmc_file = st.file_uploader("Upload CMC Data Entry Excel", type=["xls","xlsx"])
     else:
-        exd_file = st.file_uploader("Upload Exhaust Data Excel", type=["xlsx"])
-        logbook_file = st.file_uploader("Upload Logbook Excel", type=["xlsx"])
-        maindye_file = st.file_uploader("Upload Main Dye Sample Excel", type=["xlsx"])
-        finalsample_file = st.file_uploader("Upload Final Sample Excel", type=["xlsx"])
-        cmc_file = st.file_uploader("Upload CMC Data Entry Excel", type=["xlsx"])
+        exd_file = st.file_uploader("Upload Exhaust Data Excel", type=["xls","xlsx"])
+        logbook_file = st.file_uploader("Upload Logbook Excel", type=["xls","xlsx"])
+        maindye_file = st.file_uploader("Upload Main Dye Sample Excel", type=["xls","xlsx"])
+        finalsample_file = st.file_uploader("Upload Final Sample Excel", type=["xls","xlsx"])
+        cmc_file = st.file_uploader("Upload CMC Data Entry Excel", type=["xls","xlsx"])
 
     if exd_file and logbook_file and maindye_file and finalsample_file and cmc_file:
         st.success("✅ All files linked successfully!")
@@ -571,6 +571,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
